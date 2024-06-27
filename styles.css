@@ -1,0 +1,39 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: darkolivegreen;
+    background-size: cover;
+
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 800px;
+    margin: 40px auto;
+}
+.mole {
+    width: 100px;
+    height: 100px;
+    visibility: hidden;
+    position: absolute;
+    bottom: 15px;
+    cursor: pointer;
+    background-color: transparent;
+    left: 25%;
+}
+.mole.active {
+    visibility: visible;
+}
+.hole {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    background: url('imgs/hole.png') center bottom no-repeat;
+    background-size: contain;
+}
